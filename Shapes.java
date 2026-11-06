@@ -57,6 +57,27 @@ for (int i = 0; i < 6; i++) {
 
 
         // Extension 1:
+         drawShapes.up();  
+       drawShapes.forward(50);
+       drawShapes.right(90);
+       drawShapes.forward(200);
+       drawShapes.left(90);
+       drawShapes.down();
+
+        int randomLength = 0;
+for (int d = 0; d < 10; d++) {
+    drawShapes.up();
+   drawShapes.left(90);
+   drawShapes.forward(20);
+   drawShapes.right(90);
+   drawShapes.down();
+   randomLength = ( (int) (Math.random() * 10 ) + 1 );
+       for (int b = 0; b < 6; b++) { 
+       drawShapes.right(60);
+   drawShapes.forward(randomLength);
+   
+   }
+   }
 
 
         // Extension 2:
