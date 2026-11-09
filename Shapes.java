@@ -80,7 +80,32 @@ for (int d = 0; d < 10; d++) {
    }
 
 
-        // Extension 2:
+        // Extension 2: triple nested turtle makes waves  waves is a shape 
+         drawShapes.up();
+   
+  
+   drawShapes.left(180);
+   drawShapes.forward(1000);
+   drawShapes.right(180);
+   drawShapes.down();
+
+ 
+   for (int d = 0; d < 10; d++) {
+    drawShapes.up();
+   drawShapes.left(90);
+   drawShapes.forward(20);
+   drawShapes.right(90);
+   drawShapes.down();
+       for (int b = 0; b < 6; b++) { 
+       drawShapes.right(60);
+   drawShapes.forward(30);
+   for (int u = 0; u < 6; u++) {
+    drawShapes.left(10);
+    drawShapes.forward(10);
+    }
+   }
+   }
+
 
     }
 }
